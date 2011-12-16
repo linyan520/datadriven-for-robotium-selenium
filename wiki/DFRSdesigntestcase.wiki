@@ -123,7 +123,7 @@
 <tr valign="top">
 <td width="152" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">project_to_test_target</span></p>
 </td>
-<td width="442" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">&lt;your project targetPackage, like com.project.package&gt;</span></p>
+<td width="442" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">your project targetPackage, like com.project</span></p>
 </td>
 </tr>
 <tr valign="top">
