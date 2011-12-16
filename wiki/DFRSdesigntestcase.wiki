@@ -1,0 +1,404 @@
+#summary Guide to design DFRS test cases or suites.
+
+= An Example =
+<p class="rvps2"><span class="rvts6">This is a sample of a test case: This test called </span><span class="rvts14">TEST3.xls</span><span class="rvts6">, download </span><a class="rvts7" href="https://docs.google.com/spreadsheet/fm?key=0ArH023IdhMTIdG5jdFM4V042TDFib3BjSlplYmZuSkE&amp;fmcmd=4" target="_blank">here</a></p>
+<p class="rvps2"><span class="rvts22">Business logic:</span><span class="rvts21"> </span><span class="rvts6">after opening the application, click button named YES, and enter email &amp; password, then submit. Then verify name of "Dean" is appeared on screen</span></p>
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">C</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">LOGIN</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">sleep</span></p>
+</td>
+<td width="93" height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">2000</span></p>
+</td>
+<td width="199" height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">clickOnButton</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">Yes</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">enterText</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">tommy.crush@gmail.com</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">enterText</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">1</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">aaaaaaaa</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">clickOnButton</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">searchText</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">Dean</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">goBack</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6">This is a sample of a test suite: This test called </span><span class="rvts14">SUITE1.xls</span><span class="rvts6">, download </span><a class="rvts7" href="https://docs.google.com/spreadsheet/fm?key=0ArH023IdhMTIdHB4a3ltU3pVbmZXTjZZYkJDUmxLZ2c&amp;fmcmd=4" target="_blank">here</a></p>
+<p class="rvps2"><span class="rvts22">Business logic:</span><span class="rvts21"> </span><span class="rvts6">a suite included 3 tests, it runs test 3 then test 2 then test1</span></p>
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">test3</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">test2</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">test1</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6">This is a sample of a batch: This test called </span><span class="rvts14">BATCH.xls</span><span class="rvts6">, download </span><a class="rvts7" href="https://docs.google.com/spreadsheet/fm?key=0ArH023IdhMTIdFk1NzU2R2doTUdrWGQyU3BvbTNiTWc&amp;fmcmd=4" target="_blank">here</a></p>
+<p class="rvps2"><span class="rvts22">Business logic:</span><span class="rvts21"> </span><span class="rvts6">a batch to run, included 2 suites, it runs suite1 then suite 2</span></p>
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">suite1</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">suite2</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+<p class="rvps2"><span class="rvts6">This is a sample of a batch: This file called </span><span class="rvts14">CONFIG.xls</span><span class="rvts6">, this file will be put on DUT before run testing</span></p>
+<p class="rvps2"><span class="rvts22">Business logic:</span><span class="rvts21">&nbsp;</span><span class="rvts6"> including URL to run and to write output to, these are MS Excel format of 2003</span></p>
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td width="152" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">project_to_test_target</span></p>
+</td>
+<td width="442" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">&lt;your project targetPackage, like com.project.package&gt;</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="152" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">xls_writeto_url</span></p>
+</td>
+<td width="442" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">output</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="152" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">xls_batch_url</span></p>
+</td>
+<td width="442" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">batch</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6">This is a sample of a batch: This file called </span><span class="rvts14">URL_BATCH.xls</span><span class="rvts6">, this file will be put on DUT before run testing</span></p>
+<p class="rvps2"><span class="rvts22">Business logic:</span><span class="rvts21">&nbsp;</span><span class="rvts6"> including files &amp; links to download, trigger to download when key "download" equals to YES, and no download when it is not YES</span></p>
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td width="114" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">download</span></p>
+</td>
+<td width="480" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">yes</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="114" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">batch.xls</span></p>
+</td>
+<td width="480" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">https://docs.google.com/spreadsheet/fm?key=0Y=4</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="114" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">suite1.xls</span></p>
+</td>
+<td width="480" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">https://docs.google.com/spreadsheet/fm?key=0T=4</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="114" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">suite2.xls</span></p>
+</td>
+<td width="480" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">https://docs.google.com/spreadsheet/fm?key=0H=4</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="114" height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">test1.xls</span></p>
+</td>
+<td width="480" height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">https://docs.google.com/spreadsheet/fm?key=0A=4</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="114" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">test2.xls</span></p>
+</td>
+<td width="480" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">https://docs.google.com/spreadsheet/fm?key=0C=4</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td width="114" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">test3.xls</span></p>
+</td>
+<td width="480" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts23">https://docs.google.com/spreadsheet/fm?key=0R=4</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+= Principles =
+
+1. Tests set tree view: examples are [https://docs.google.com/open?id=0B7H023IdhMTIMDc4MDgwYzAtNWE3Yy00MmFmLWE0OWUtNDlkYmIwOTgwNGYx here] these are MS Excel format of 2003
+config.xls
+	batch.xls
+		suite1.xls
+			test2.xls
+				map_test2.xls
+			test1.xls
+			test3.xls
+		suite2.xls
+			test2.xls
+			test1.xls
+			test3.xls
+		suite3.xls
+			test2.xls
+			test1.xls
+			test3.xls
+
+User can use Google.Docs to design test cases/suites via internet, then download them in to device(s) to test
+
+2. Each time to run, system will run in order of batch.xls file, then order of suite.xls files, then order of test.xls files.
+
+3. File called URL_BATCH.xls, this is importance and must have when, this must included in  ../DCIM/DFRS folder of external hard drive from phone device:
+- you decide to run tests/suites, .XLS files, on device (by key "download" with value of "no"), or
+- download .XLS files from external (by key "download" with value of "yes", and below to define files and INTERNET or external links to download)
+
+4. File called CONFIG.xls, this is importance when you run tests/suites from, this must included in  ../DCIM/DFRS folder of external hard drive from phone device :
+  * key "xls_writeto_url" with value of "output", definition of where you write the report after executing tests/suites
+	example: 
+		value of "output" -> test will  report after executing tests/suites to "output.xls" 
+  * key "xls_batch_url" with value of "batch"
+	example: 
+		value of "batch" -> test will run batch.xls, then suite inside batch file, then tests on suite 
+
+5. Design each test must be full of data on all cells or be lacking information
+  * example a RIGHT test case:
+
+Business logic: after opening the application, click button named YES, and enter email & password, then submit. Then verify name of "Dean" is appeared on screen
+ 
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">C</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">LOGIN</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">sleep</span></p>
+</td>
+<td width="93" height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">2000</span></p>
+</td>
+<td width="199" height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">clickOnButton</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">Yes</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">enterText</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">tommy.crush@gmail.com</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">enterText</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">1</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">aaaaaaaa</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">clickOnButton</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">searchText</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">Dean</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">goBack</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+</tr>
+</table>
+</div>
+
+
+  * example a WRONG test case
+<div class="rvps2"><table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #000000; border-style: solid;">
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">C</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">LOGIN</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;">
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;">
+</td>
+</tr>
+<tr valign="top">
+<td height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">sleep</span></p>
+</td>
+<td width="93" height="17" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">2000</span></p>
+</td>
+<td width="199" height="17" style="border-color: #000000; border-style: solid;"></td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">clickOnButton</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">Yes</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;">
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">enterText</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">tommy.crush@gmail.com</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">enterText</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">1</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">aaaaaaaa</span></p>
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">clickOnButton</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">0</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;">
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">searchText</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">Dean</span></p>
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;">
+</td>
+</tr>
+<tr valign="top">
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">R</span></p>
+</td>
+<td style="border-color: #000000; border-style: solid;"><p class="rvps2"><span class="rvts6">goBack</span></p>
+</td>
+<td width="93" style="border-color: #000000; border-style: solid;">
+</td>
+<td width="199" style="border-color: #000000; border-style: solid;">
+</td>
+</tr>
+</table>
+</div>
+
+
+6. When running finished, output.xls or .html will be generated to be reported of runs, so all status/step which are used to design in test.xls files will be logged (pass/fail)
+
+7. Tester will design steps like action, such as sendkey, searchtext, back ....on each test.xls 
+examples are here
