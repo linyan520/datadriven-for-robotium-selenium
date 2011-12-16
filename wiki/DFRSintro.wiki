@@ -1,0 +1,69 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+This is the keyword driven automation framework which applies for Robotium & Selenium framework
+DFRS is short form of datadriven for Robotium & Selenium system test framework
+
+By KoolJ
+Version 1.0
+
+Copyright @ GNU license, 2011.
+
+= What's new =
+
+1. Team developed these keywords:
+- sendKey
+- sleep
+- clickOnButton
+- enterText
+- clickOnButton
+- searchText
+- goBack
+
+2. Team will develop these keywords:
+- take a screen shot
+- pinch & zoom
+- report in HTML format with timing each test-case
+- build the same way for Selenium frame work
+- for..endfor
+- if..endif
+- store
+- echo
+- screenshot
+< and more...>
+
+= Pros & Cons =
+1. Pros
+- 95% saved in test effort
+- Tester can easily, understandably design system test cases in keyword-driven, not programming test by coding
+- Free totally
+
+2. Cons
+- Just for Android phone application, not Android phone web based application
+- Less keywords at current status
+- Not an Object Oriented approach
+- Dependency on Robotium & Selenium framework
+
+= How do testers use this =
+1. Testers must do steps on Setup Environment guide first on local PC to start running test from, then
+
+2. Design test cases, in EXCEL via http://docs.google.com,  test cases/suites on MS Excel (format of 2003 version), then put them in to device under test (DUT)
+
+3. Plug a/multi Android mobile device(s) to test
+
+4. Each time when new build of system under test (SUT) project, development team will release source code to test team, then testers will run to compile DFRS to execute test cases/suites on SUT on DUT with maven as in step  12 of Setup Environment guide. This is needed, because:
+- step 11 will deploy SUT to DUT
+- step 12 will deploy engine (to test SUT) to DUT, then run the tests that are designed on DUT
+
+5. Tester can configure to run (step 4, above) by manual (a command line) or a schedule by MS Windows schedule
+
+6. Tester can view report (pass/fail) after run via output.xls or HTML file, and view screen-shot on ../DCIM/DFRS on external hard drive of DUT
+
+= Where are we on the world of software testing =
+1. In wikipedia of software testing theory, [http://en.wikipedia.org/wiki/Software_testing#System_testing], what we do is a part of automation for system test with functionality for android mobile phones
+
+2. With CSTE certification of QAI, including the definition and theory, [http://www.softwarecertifications.org/cboks/cste/te_cat1.htm], what we do are a part of automation system test with functionality for android mobile phones
+
+3. With ISTQB certification of ISTQB institute, including the definition and theory, [http://istqb.org/display/ISTQB/Foundation+Level+Documents], what we do are a part of automation system test with functionality for android mobile phones
+
+So, you can imagine where are we...
