@@ -6,6 +6,7 @@
 {{{
 JAVA_HOME
 C:\Program Files\Java\jdk1.6.0_12
+
 Path
 %JAVA_HOME%\bin
 }}}
@@ -19,10 +20,17 @@ javac
 }}}
 <this should return list of java syntax>
 
+2b. Set java option
+{{{
+_JAVA_OPTIONS
+-Xms512m -Xmx1024m
+}}}
+
 3. Configure android path & source: add to environment variables
 {{{
 ANDROID_HOME
 <location of your library>\android-sdk-windows
+
 Path
 %ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools
 }}}
@@ -43,6 +51,7 @@ adb devices
 {{{
 MAVEN_HOME
 <location of your library>\apache-maven-3.0.3
+
 Path
 %MAVEN_HOME%\bin
 }}}
@@ -70,7 +79,8 @@ Change
 {{{
 android:targetPackage="<your SUT package>"
 }}}
-    * example: {{{
+    * example: 
+{{{
 android:targetPackage="com.zoomme.zoom"
 }}}
 
@@ -78,13 +88,13 @@ android:targetPackage="com.zoomme.zoom"
 
 Change
 {{{
-private static final String        TARGET_PACKAGE_ID = "<your package name>";
+private static final String TARGET_PACKAGE_ID = "<your package name>";
 private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "<your first app screen activity>";
 }}}
     * example: 
-               {{{
-private static final String        TARGET_PACKAGE_ID = "com.zoomme.zoom";
-               private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "com.zoomme.zoom.app.screens.GenSplash";
+{{{
+private static final String TARGET_PACKAGE_ID = "com.zoomme.zoom";
+private static final String LAUNCHER_ACTIVITY_FULL_CLASSNAME = "com.zoomme.zoom.app.screens.GenSplash";
 }}}
 
 8. Use maven to compile DFRS project, by command prompt at:
