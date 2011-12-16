@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary DFRS introduction.
 
 = Introduction =
 This is the keyword driven automation framework which applies for Robotium & Selenium framework
