@@ -191,21 +191,21 @@
 = Principles =
 
 1. Tests set tree view: examples are [https://docs.google.com/open?id=0B7H023IdhMTIMDc4MDgwYzAtNWE3Yy00MmFmLWE0OWUtNDlkYmIwOTgwNGYx here] these are MS Excel format of 2003
-config.xls
-	batch.xls
-		suite1.xls
-			test2.xls
-				map_test2.xls
-			test1.xls
-			test3.xls
-		suite2.xls
-			test2.xls
-			test1.xls
-			test3.xls
-		suite3.xls
-			test2.xls
-			test1.xls
-			test3.xls
+  * config.xls
+	* batch.xls
+		* suite1.xls
+			* test2.xls
+				* map_test2.xls
+			* test1.xls
+			* test3.xls
+		* suite2.xls
+			* test2.xls
+			* test1.xls
+			* test3.xls
+		* suite3.xls
+			* test2.xls
+			* test1.xls
+			* test3.xls
 
 User can use Google.Docs to design test cases/suites via internet, then download them in to device(s) to test
 
@@ -401,4 +401,3 @@ Business logic: after opening the application, click button named YES, and enter
 6. When running finished, output.xls or .html will be generated to be reported of runs, so all status/step which are used to design in test.xls files will be logged (pass/fail)
 
 7. Tester will design steps like action, such as sendkey, searchtext, back ....on each test.xls 
-examples are here
