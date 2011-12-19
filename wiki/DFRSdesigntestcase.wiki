@@ -199,13 +199,13 @@
 			* test1.xls
 			* test3.xls
 		* suite2.xls
-			* test2.xls
 			* test1.xls
+			* test2.xls
 			* test3.xls
 		* suite3.xls
+			* test3.xls
 			* test2.xls
 			* test1.xls
-			* test3.xls
 
 User can use Google.Docs to design test cases/suites via internet, then download them in to device(s) to test
 
