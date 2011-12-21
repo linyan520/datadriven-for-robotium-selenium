@@ -63,9 +63,14 @@ mvn
 <this should return list of maven syntax>
 
 5. Configure pom.xml to system under test (SUT) project like here
-Use maven to compile SUT project source, , by command prompt at:
+Use maven to compile SUT project source, by command prompt at:
 {{{
 mvn clean compile
+}}}
+Should be no error found
+Use maven to install SUT to device under test (DUT), by command prompt at:
+{{{
+mvn clean install android:redeploy -Dandroid.device=usb
 }}}
 Should be no error found
 
