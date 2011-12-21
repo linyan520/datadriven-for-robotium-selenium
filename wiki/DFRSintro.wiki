@@ -55,9 +55,11 @@ Copyright @ GNU license, 2011.
 = How do testers use this =
 1. Testers must do steps on Setup Environment guide first on local PC to start running test from, then
 
-2. Design test cases, in EXCEL via http://docs.google.com,  test cases/suites on MS Excel (format of 2003 version), then put them in to device under test (DUT)
+2. Design test cases, in EXCEL via http://docs.google.com,  test cases/suites on MS Excel (format of 2003 version), then put them in to device under test (DUT) by 2 ways:
+ * Put test cases in to device(s) by manual
+ * Download them via share doc feature of http://docs.google.com
 
-3. Plug a/multi Android mobile device(s) to test
+3. Plug a/multi Android mobile device(s) to test, create a must-precisely-folder on external harddrive: mnt/sdcard/DCIM/DFRS
 
 4. Each time when new build of system under test (SUT) project, development team will release source code to test team, then testers will run to compile DFRS to execute test cases/suites on SUT on DUT with maven as in step  12 of Setup Environment guide. This is needed, because:
   * step 11 will deploy SUT to DUT
