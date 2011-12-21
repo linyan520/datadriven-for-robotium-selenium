@@ -62,8 +62,8 @@ Copyright @ GNU license, 2011.
 3. Plug a/multi Android mobile device(s) to test, create a must-precisely-folder on external harddrive: mnt/sdcard/DCIM/DFRS
 
 4. Each time when new build of system under test (SUT) project, development team will release source code to test team, then testers will run to compile DFRS to execute test cases/suites on SUT on DUT with maven as in step  12 of [http://code.google.com/p/datadriven-for-robotium-selenium/wiki/DFRSsetupenvironment Setup Environment] guide. This is needed, because:
-  * step 11 will deploy SUT to DUT
-  * step 12 will deploy engine (to test SUT) to DUT, then run the tests that are designed on DUT
+  * step 5 will deploy SUT to DUT
+  * step 11 will deploy engine (to test SUT) to DUT, then run the tests that are designed on DUT
 
 5. Tester can configure to run (step 4, above) by manual (a command line) or a schedule by MS Windows schedule
 
