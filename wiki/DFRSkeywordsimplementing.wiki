@@ -16,7 +16,6 @@ Syntax:
   * RIGHT: 22
   * UP: 19
 
---------------------------------
 Example:
 || sendKey || 20 ||
 ..to go down like you press down arrow key on phone
@@ -44,13 +43,13 @@ Syntax:
  clickOnButton(index/name ) 
 }}}
           Clicks on a Button with a given index.
-
 Example:
 || clickOnButton || 1 ||
 ..to click the button where index of "1"
 
 || clickOnButton || Yes ||
 ..to click the button where its name of "Yes"
+
 --------------------------------
 = sleep=
 Syntax:
@@ -58,7 +57,6 @@ Syntax:
  sleep(mili-seconds) 
 }}}
           wait for mili-seconds to continue to run.
-
 Example:
 || sleep || 10000 ||
 ..to wait for 1 second to continue to run
@@ -69,11 +67,12 @@ Syntax:
 {{{
  searchText(text)
 }}}
-         Searches for a text string and returns true if at least one item is found with the expected text. Will automatically scroll when needed..
+         Searches for a text string and returns true if at least one item is found with the expected text. Will automatically scroll when needed
 
 Example:
 ||searchText||Don Kuminaty||
 ..to search whole screen the text of "Don Kuminaty" and returns true if found, false if not.
+
 --------------------------------
 = goBack=
 Syntax:
@@ -82,8 +81,9 @@ Syntax:
 }}}
           To go back like BACK function on almost of Android devices
 Example:
-||goBack||0|
+||goBack||0||
 ..to go back like BACK function on almost of Android devices
+
 --------------------------------
 = store=
 Syntax:
@@ -100,6 +100,7 @@ Example 2:
 || store || varSUBTOTAL1 || 5000 ||
 || store || varTOTAL || varSUBTOTAL1 ||
 ..to store "5000" to variable of "varSUBTOTAL1", then store value of variable of "varSUBTOTAL1" to "varTOTAL". So value of "varTOTAL" should be "5000"
+
 --------------------------------
 = screenshot=
 Syntax:
@@ -111,6 +112,7 @@ Syntax:
 Example 1:
 || screenshot || currentloginscreen ||
 ..to take a whole screen screenshot on current phone view, an image file named currentloginscreen_(archivedmiliseconds).png will be created on ../DCIM/DFRS
+
 --------------------------------
 = echo=
 Syntax:
@@ -134,9 +136,9 @@ Syntax:
 {{{
  for ..endfor(<variable1>,<variable2>,<variable3>)
 }}}
-          To go loop with (variable3)/(variable2) times, if (variable1) less than (variable3) in number
-          This for..endfor can be loop into each other. And endfor must be defined after for
-          (variable1),(variable2),(variable3) must be stored in NUMBER	
+          * To go loop with (variable3)/(variable2) times, if (variable1) less than (variable3) in number
+          * This *for..endfor* can be loop into each other. And *endfor* must be defined after *for*
+          * (variable1),(variable2),(variable3) must be stored in NUMBER	
 
 Example 1:
 ||store||variable1||1||0||
@@ -146,11 +148,18 @@ Example 1:
 ||echo||variable1||0||0||
 ||endfor||0||0||0||
 ..this will write out to report/debug ddms
-  variable1 1
-  variable1 2
-  variable1 3
-  variable1 4
-  variable1 5
+
+  variable1 is 1
+
+  variable1 is 2
+
+  variable1 is 3
+
+  variable1 is 4
+
+  variable1 is 5
+
+
 --------------------------------
 = if ..endif=
 
@@ -158,11 +167,11 @@ Syntax:
 {{{
  if ..endif(<variable1>,<logic value>,<variable2>)
 }}}
-          To go out the *if..endif* with <logic value> is WRONG, TRUE to go in
-          (logic value) should be: # (diff) , "= (equal), > (greater than), < (less than), >= (greater & equal to), <= (less & equal to)
-          There is also a *else* between *if* and *endif*, then to go to else  if (logic value) is WRONG        
-          And *endif* must be defined after *if*, *if..endif* can be looped
-          (variable1),(variable2) must be stored in NUMBER or STRING	
+         * To go out the *if..endif* with <logic value> is WRONG, TRUE to go in
+         * (logic value) should be: # (diff) , "= (equal), > (greater than), < (less than), >= (greater & equal to), <= (less & equal to)
+         * There is also a *else* between *if* and *endif*, then to go to else  if (logic value) is WRONG        
+         * And *endif* must be defined after *if*, *if..endif* can be looped
+         * (variable1),(variable2) must be stored in NUMBER or STRING	
 
 Example 1:
 ||store||variable1||1||0||
