@@ -4,6 +4,13 @@
 This is the keyword driven automation framework which applies for Robotium & Selenium framework
 DFRS is short form of datadriven for [http://code.google.com/p/robotium/ Robotium] & [http://seleniumhq.org/ Selenium] system test framework
 
+Features
+ * Keywords are designed to be familiar with non-coding testers
+ * Keywords are developed on Robotium & Selenium system test framework
+ * Easy to design test case (on MS Excel 2003 or via Exel of Google doc)
+ * Effectively execute test by Maven on multiple Android smart phones
+ * Short & precisely traceable test report
+
 By [http://facebook.com/koolj.indahouse KoolJ]
 
 Version 1.0
@@ -36,13 +43,14 @@ Copyright @ GNU license, 2011.
 1. Pros
   * 95% saved in test effort
   * Tester can easily, understandably design system test cases in keyword-driven, not programming test by coding
+  * Tester can effectively execute test by Maven on multiple Android smart phones & view short & precisely traceable test report
   * Free totally
 
 2. Cons
   * Just for Android phone application, not Android phone web based application
   * Less keywords at current status
   * Not an Object Oriented approach
-  * Dependency on Robotium & Selenium framework
+  * Dependency on [http://code.google.com/p/robotium/ Robotium] & [http://seleniumhq.org/ Selenium] framework
 
 = How do testers use this =
 1. Testers must do steps on Setup Environment guide first on local PC to start running test from, then
