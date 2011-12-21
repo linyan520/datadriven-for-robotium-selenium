@@ -65,7 +65,7 @@ Copyright @ GNU license, 2011.
   * step 5 will deploy SUT to DUT
   * step 11 will deploy engine (to test SUT) to DUT, then run the tests that are designed on DUT
 
-5. Tester can configure to run (step 4, above) by manual (a command line) or a schedule by MS Windows schedule
+5. Tester can configure to run (#4, above) by manual (a command line) or a schedule by MS Windows schedule
 
 6. Tester can view report (pass/fail) after run via output.xls or HTML file, and view screen-shot on ../DCIM/DFRS on external hard drive of DUT
 
