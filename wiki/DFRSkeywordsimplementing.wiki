@@ -56,10 +56,9 @@ Example:
 Syntax:
 {{{
  sleep(mili-seconds) 
-}}
+}}}
           wait for mili-seconds to continue to run.
 
---------------------------------
 Example:
 || sleep || 10000 ||
 ..to wait for 1 second to continue to run
