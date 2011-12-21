@@ -20,18 +20,16 @@ Copyright @ GNU license, 2011.
   * clickOnButton
   * searchText
   * goBack
-
-2. Team will develop these keywords:
-  * take a screen shot
-  * pinch & zoom
-  * report in HTML format with timing each test-case
-  * build the same way for Selenium frame work
   * for..endfor
   * if..endif
   * store
   * echo
   * screenshot
 
+2. Team will develop these keywords:
+  * pinch & zoom
+  * report in HTML format with timing each test-case
+  * build the same way for Selenium frame work
 < and more...>
 
 = Pros & Cons =
