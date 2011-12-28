@@ -1,0 +1,13 @@
+#summary DFRS frequently questions and answers.
+
+= How do I get started with DFRS? =
+
+= Right now, does DFRS support Selenium? =
+
+= Which versions of Android & Robotium does DFRS support? =
+
+= Which features does DFRS support? =
+
+= Can I use DFRS if I only have the apk file? =
+Yes you can. You do not need to have the source code. More information is found [http://code.google.com/p/robotium/wiki/RobotiumForPreInstalledApps here].
+ 
