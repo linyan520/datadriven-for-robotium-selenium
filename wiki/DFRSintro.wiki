@@ -136,9 +136,9 @@ Copyright @ GNU license, 2011.
   * step 5 will deploy SUT to DUT
   * step 11 will deploy DFRS engine (to test SUT) to DUT, then (11.b) run the tests that are designed on DUT
 
-5. Tester can configure to run (#4, above) by manual (a command line) or a schedule by MS Windows schedule
+6. Tester can configure to run (#4, above) by manual (a command line) or a schedule by MS Windows schedule
 
-6. Tester can configure to run (# 4, above) by manual (a command line) or a schedule by [http://www.google.com.vn/url?sa=t&rct=j&q=ms%20windows%20schedule&source=web&cd=2&ved=0CCgQFjAB&url=http%3A%2F%2Fwindows.microsoft.com%2Fen-US%2Fwindows7%2Fschedule-a-task&ei=x9HqTvTHOZGciAfLhLjBBw&usg=AFQjCNGzyvTn4StWh-41MD-F6K4tmKm5lg&sig2=190c3GwDbKhegL0aYD00UQ MS-Windows-schedule]
+7. Tester can configure to run (# 4, above) by manual (a command line) or a schedule by [http://www.google.com.vn/url?sa=t&rct=j&q=ms%20windows%20schedule&source=web&cd=2&ved=0CCgQFjAB&url=http%3A%2F%2Fwindows.microsoft.com%2Fen-US%2Fwindows7%2Fschedule-a-task&ei=x9HqTvTHOZGciAfLhLjBBw&usg=AFQjCNGzyvTn4StWh-41MD-F6K4tmKm5lg&sig2=190c3GwDbKhegL0aYD00UQ MS-Windows-schedule]
 
 = Where are we on the world of software testing =
 1. In wikipedia of software testing theory, [http://en.wikipedia.org/wiki/Software_testing#System_testing], what we do is a part of automation for system test with functionality for android mobile phones
