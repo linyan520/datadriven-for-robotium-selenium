@@ -1,3 +1,6 @@
 #summary Setup DFRS Environment  .
 
 Refer [http://code.google.com/p/datadriven-for-robotium-selenium/downloads/list this].
+
+  * DFRS_pdf_v0.9.zip
+  * DFRS_html_doc_v0.9.zip
